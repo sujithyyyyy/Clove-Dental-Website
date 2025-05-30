@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clove Dental - Expert Dental Care in Delhi</title>
+  <meta name="description"
+    content="Get expert dental care in Delhi with Clove Dental. 600+ clinics, 1500+ dentists, and 30L+ happy patients. Book your free consultation today." />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="styles1.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header" style="background-color: #fffaf5">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <div class="logo-text">
+            CLOVE<span style="color: #462512">:)</span>
+            <span class="logo-subtitle" style="display: block; margin-top: -5px">DENTAL</span>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <a href="#services">Services</a>
+          <a href="#treatments">Treatments</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#about">About</a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="phone-info">
+            <button class="phone-button" style="
+                  background: white;
+                  color: #462512;
+                  padding: 8px 16px;
+                  border: 1px solid #462512;
+                  border-radius: 3rem;
+                  cursor: pointer;
+                  display: flex;
+                  align-items: center;
+                ">
+              <i data-lucide="phone" style="
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 8px;
+                    color: #462512;
+                  "></i>
+              <span>985-6589-510</span>
+            </button>
+          </div>
+
+          <a href="#appointment" class="btn" style="display: flex; align-items: center">
+            <i data-lucide="book-marked" style="width: 19px; height: 21px; margin-right: 8px"></i>
+            Book Appointment
+          </a>
+        </div>
+
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+          <i data-lucide="menu" style="width: 24px; height: 24px"></i>
+        </button>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+          <a href="#services">Services</a>
+          <a href="#treatments">Treatments</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#about">About</a>
+          <div class="phone-info">
+            <i data-lucide="phone" style="width: 16px; height: 16px; margin-right: 8px"></i>
+            <span>985-6589-510</span>
+          </div>
+          <a href="#appointment" class="btn">Book Appointment</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero" style="
+        position: relative;
+        background-color: #f0f4f7;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+        min-height: 100vh;
+      ">
+    <div class="hero-background-image" style="
+          background-image: url('src/d9e2eb1945ffd93ea40450c1db6dd1c7d2b70f19.jpg');
+          background-size: cover;
+          background-position: center;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          filter: blur(3px);
+        "></div>
+
+    <div class="container" style="
+          position: relative;
+          z-index: 2;
+          display: flex;
+          flex-direction: column;
+          padding: clamp(1rem, 5vw, 2rem);
+          gap: clamp(1rem, 3vw, 2rem);
+        ">
+      <div style="
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            justify-content: center;
+            gap: clamp(1rem, 3vw, 2rem);
+            width: 100%;
+          ">
+        <!-- Left Column - Text Content -->
+        <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
+          <div class="hero-text-content" style="
+                flex: 1 1 280px;
+                max-width: 600px;
+                background: linear-gradient(
+                  rgba(255, 255, 255, 0.5),
+                  rgba(255, 255, 255, 0.5)
+                );
+                backdrop-filter: blur(15px);
+                padding: clamp(1.5rem, 4vw, 2.5rem);
+                border-radius: 12px;
+                order: 1;
+                position: relative;
+                overflow: hidden;
+                @media (max-width: 768px) {
+                  order: 1;
+                  width: 100%;
+                }
+              ">
+            <div style="
+                  position: absolute;
+                  right: -100px;
+                  bottom: -50px;
+                  width: 300px;
+                  height: auto;
+                  opacity: 1;
+                  z-index: 0;
+                ">
+              <img src="src/b1e1ea90f6a139f8e90e48cf2774fbfdafe50435.png" alt="Dentist" style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                  " />
+            </div>
+            <div style="position: relative; z-index: 1;">
+              <h1 style="
+                    font-size: clamp(1rem, 1vw, 1rem);
+                    font-weight: bold;
+                    color: #303030;
+                    margin-bottom: clamp(0.5rem, 2vw, 1rem);
+                    line-height: 1.2;
+                  ">
+                Painless Root Canal Treatment in Delhi
+              </h1>
+              <p style="
+                    font-size: clamp(1rem, 2vw, 1rem);
+                    color: #4e4e4e;
+                    margin-bottom: clamp(1rem, 3vw, 2rem);
+                  ">
+                Expert RCT. Zero Pain. Right Here in Delhi.
+              </p>
+              <a href="#appointment" class="btn" style="
+                    display: inline-flex;
+                    align-items: center;
+                    white-space: nowrap;
+                    font-size: clamp(0.9rem, 1.5vw, 1rem);
+                  ">
+                <i data-lucide="book-marked" style="
+                      width: clamp(16px, 2vw, 19px);
+                      height: clamp(18px, 2vw, 21px);
+                      margin-right: 8px;
+                    "></i>
+                Book Appointment
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column - Form -->
+        <div class="hero-form" style="
+              flex: 1 1 400px;
+              min-width: 380px;
+              max-width: 450px;
+              width: 100%;
+              background: rgba(255, 249, 244, 1);
+              padding: clamp(1.5rem, 4vw, 2.5rem);
+              border-radius: 12px;
+              box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+              backdrop-filter: blur(5px);
+              order: 3;
+              position: relative;
+              right: 0;
+              
+              @media (max-width: 768px) {
+                order: 2;
+                min-width: 100%;
+                margin: 0 auto;
+              }
+            ">
+          <h2 style="
+                font-size: clamp(1.1rem, 3vw, 1.6rem);
+                color: #1a2c47;
+                margin-bottom: clamp(0.5rem, 2vw, 0.75rem);
+                text-align: center;
+              ">
+            Get Expert Dental Guidance in Delhi
+          </h2>
+          <p style="
+                color: #5a677b;
+                margin-bottom: clamp(1rem, 3vw, 1.8rem);
+                font-size: clamp(0.8rem, 1.5vw, 0.95rem);
+                text-align: center;
+              ">
+            Book your free consultation today and take the first step towards
+            healthy, beautiful teeth.
+          </p>
+
+          <form onsubmit="handleHeroForm(event)" style="
+                display: flex;
+                flex-direction: column;
+                gap: clamp(0.8rem, 2vw, 1.2rem);
+                width: 100%;
+              ">
+            <div class="form-group">
+              <input type="text" class="form-input" placeholder="Name" required style="
+                    width: 100%;
+                    padding: clamp(0.6rem, 2vw, 0.85rem);
+                    border: 1px solid #d1d5db;
+                    border-radius: 0.5rem;
+                    font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+                  " />
+            </div>
+            <div class="form-group">
+              <input type="tel" class="form-input" placeholder="Mobile Number" required style="
+                    width: 100%;
+                    padding: clamp(0.6rem, 2vw, 0.85rem);
+                    border: 1px solid #d1d5db;
+                    border-radius: 0.5rem;
+                    font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+                  " />
+            </div>
+            <div class="form-group" style="display: flex; align-items: center; gap: 0.5rem">
+              <input type="text" class="form-input" placeholder="Captcha" required style="
+                    flex-grow: 1;
+                    padding: clamp(0.6rem, 2vw, 0.85rem);
+                    border: 1px solid #d1d5db;
+                    border-radius: 0.5rem;
+                    font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+                  " />
+              <div style="
+                    background: rgba(70, 37, 18, 1);
+                    color: white;
+                    padding: clamp(0.4rem, 1.5vw, 0.6rem)
+                      clamp(0.6rem, 2vw, 0.9rem);
+                    border-radius: 0.375rem;
+                    font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+                    user-select: none;
+                  ">
+                1514
+              </div>
+            </div>
+            <div class="form-group" style="display: flex; align-items: flex-start; gap: 0.5rem">
+              <input type="checkbox" id="termsAgree" required style="
+                    width: clamp(0.8rem, 1.5vw, 1rem);
+                    height: clamp(0.8rem, 1.5vw, 1rem);
+                    margin-top: 0.2rem;
+                  " />
+              <label for="termsAgree" class="form-disclaimer" style="
+                    font-size: clamp(0.7rem, 1.2vw, 0.8rem);
+                    color: #6b7280;
+                    line-height: 1.3;
+                  ">I agree to CLOVE Dental's Terms and Privacy Policy and
+                consent to contact via phone, email, or SMS.</label>
+            </div>
+            <button type="submit" class="btn" style="
+                  width: 100%;
+                  font-weight: 600;
+                  background: #f97316;
+                  color: white;
+                  padding: clamp(0.7rem, 2vw, 0.9rem);
+                  border: none;
+                  border-radius: 0.5rem;
+                  cursor: pointer;
+                  font-size: clamp(0.85rem, 1.5vw, 1rem);
+                ">
+              Book a Free Consultation
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Stats Section -->
+  <section class="stats-section" style="background-color: #fffaf0; padding: 2.5rem 0;">
+      <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; gap: 1.5rem;">
+          
+          <div class="stat-item" style="display: flex; flex-direction: column; align-items: center; text-align: center; min-width: 150px;">
+              <i data-lucide="cross" style="width: 40px; height: 40px; color: #dd6b20; margin-bottom: 0.75rem;"></i>
+              <span class="stat-number" style="font-size: 1.75rem; font-weight: bold; color: #c05621;">600+</span>
+              <span class="stat-label" style="font-size: 0.9rem; color: #718096;">Clinics</span>
+          </div>
+  
+          <div class="stat-item" style="display: flex; flex-direction: column; align-items: center; text-align: center; min-width: 150px;">
+              <i data-lucide="stethoscope" style="width: 40px; height: 40px; color: #dd6b20; margin-bottom: 0.75rem;"></i>
+              <span class="stat-number" style="font-size: 1.75rem; font-weight: bold; color: #c05621;">1300+</span>
+              <span class="stat-label" style="font-size: 0.9rem; color: #718096;">Dentists</span>
+          </div>
+  
+          <div class="stat-item" style="display: flex; flex-direction: column; align-items: center; text-align: center; min-width: 150px;">
+              <i data-lucide="smile" style="width: 40px; height: 40px; color: #dd6b20; margin-bottom: 0.75rem;"></i>
+              <span class="stat-number" style="font-size: 1.75rem; font-weight: bold; color: #c05621;">30 L+</span>
+              <span class="stat-label" style="font-size: 0.9rem; color: #718096;">Happy Patients</span>
+          </div>
+  
+          <div class="stat-item" style="display: flex; flex-direction: column; align-items: center; text-align: center; min-width: 150px;">
+              <i data-lucide="tooth" style="width: 40px; height: 40px; color: #dd6b20; margin-bottom: 0.75rem;"></i> <!-- Using 'tooth' as a generic dental icon -->
+              <span class="stat-number" style="font-size: 1.75rem; font-weight: bold; color: #c05621;">35K+</span>
+              <span class="stat-label" style="font-size: 0.9rem; color: #718096;">Ortho Cases</span>
+          </div>
+  
+          <div class="stat-item" style="display: flex; flex-direction: column; align-items: center; text-align: center; min-width: 150px;">
+              <i data-lucide="anchor" style="width: 40px; height: 40px; color: #dd6b20; margin-bottom: 0.75rem;"></i> <!-- Using 'anchor' as a placeholder for implant, consider a more specific icon if available -->
+              <span class="stat-number" style="font-size: 1.75rem; font-weight: bold; color: #c05621;">5K+</span>
+              <span class="stat-label" style="font-size: 0.9rem; color: #718096;">Implants Placed</span>
+          </div>
+
+          <div class="stat-item" style="display: flex; flex-direction: column; align-items: center; text-align: center; min-width: 150px;">
+            <i data-lucide="anchor" style="width: 40px; height: 40px; color: #dd6b20; margin-bottom: 0.75rem;"></i> <!-- Using 'anchor' as a placeholder for implant, consider a more specific icon if available -->
+            <span class="stat-number" style="font-size: 1.75rem; font-weight: bold; color: #c05621;">5K+</span>
+            <span class="stat-label" style="font-size: 0.9rem; color: #718096;">Implants Placed</span>
+        </div>
+
+        <div class="stat-item" style="display: flex; flex-direction: column; align-items: center; text-align: center; min-width: 150px;">
+          <i data-lucide="anchor" style="width: 40px; height: 40px; color: #dd6b20; margin-bottom: 0.75rem;"></i> <!-- Using 'anchor' as a placeholder for implant, consider a more specific icon if available -->
+          <span class="stat-number" style="font-size: 1.75rem; font-weight: bold; color: #c05621;">5K+</span>
+          <span class="stat-label" style="font-size: 0.9rem; color: #718096;">Implants Placed</span>
+      </div>
+  
+      </div>
+  </section>
+  
+
+
+<!-- Treatment Types -->
+<section id="treatments" class="treatments" style="padding: 4rem 0;">
+    <div class="container">
+      <div class="section-header" style="text-align: left; margin-bottom: 3rem;">
+        <h2 class="section-title" style="font-size: 2rem; color: #1a2c47; margin-bottom: 1rem;">Types of Root Canal Treatments</h2>
+        <p class="section-subtitle" style="color: #6b7280; max-width: 600px;">
+          In a root canal, the dentist removes infected pulp, cleans the
+          tooth, and fills it with special material.
+        </p>
+      </div>
+
+      <div class="treatments-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px;">
+        <div class="treatment-card" style="background: white; border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: grid; grid-template-columns: 1fr 1fr; overflow: hidden;">
+          <div class="treatment-image" style="background: #f8f9fa; display: flex; align-items: center; justify-content: center;">
+            <img src="src\c7ec34a055b9420c62059e1b314c42dee347395a.png" style="max-width: 100%; height: auto; object-fit: cover;"/>
+          </div>
+          
+          <div class="treatment-content" style="padding: 2rem;">
+            <h3 class="treatment-title" style="font-size: 1.5rem; color: #1a2c47; margin-bottom: 0.5rem;">Root Canal Treatment</h3>
+            <p class="treatment-subtitle" style="color: #6b7280; margin-bottom: 1.5rem;">
+              Ideal for infected or damaged tooth
+            </p>
+
+            <div class="treatment-types" style="margin-bottom: 1.5rem;">
+              <h4 style="color: #1a2c47; margin-bottom: 1rem;">Types of RCT</h4>
+              <ul class="treatment-list" style="list-style: none; padding: 0;">
+                <li style="color: #6b7280; margin-bottom: 0.5rem;">• Root Canal Treatment</li>
+                <li style="color: #6b7280; margin-bottom: 0.5rem;">• Split RCT</li>
+                <li style="color: #6b7280; margin-bottom: 0.5rem;">• Split RCT with rubber dam</li>
+                <li style="color: #6b7280; margin-bottom: 0.5rem;">• Split RCT with laser</li>
+              </ul>
+            </div>
+
+            <div class="treatment-price" style="font-size: 1.5rem; color: #f97316; font-weight: bold; margin: 1rem 0;">₹ 19,999</div>
+            <button class="btn" style="width: 100%; background: #f97316; color: white; padding: 1rem; border: none; border-radius: 6px; cursor: pointer; font-weight: 600;">
+              Get Free Consultation
+            </button>
+          </div>
+        </div>
+
+        <div class="treatment-card" style="background: white; border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: grid; grid-template-columns: 1fr 1fr; overflow: hidden;">
+          <div class="treatment-image" style="background: #f8f9fa; display: flex; align-items: center; justify-content: center;">
+            <img src="src\0af583fd0409b9803b51b8a9b58ac424f1a201bd.png" style="max-width: 100%; height: auto; object-fit: cover;"/>
+          </div>
+
+          <div class="treatment-content" style="padding: 2rem;">
+            <h3 class="treatment-title" style="font-size: 1.5rem; color: #1a2c47; margin-bottom: 0.5rem;">Re-Root Canal Treatment</h3>
+            <p class="treatment-subtitle" style="color: #6b7280; margin-bottom: 1.5rem;">
+              Ideal tissues that persist or occur after an initial root canal treatment
+            </p>
+
+            <div class="treatment-types" style="margin-bottom: 1.5rem;">
+              <h4 style="color: #1a2c47; margin-bottom: 1rem;">Types of RCT</h4>
+              <ul class="treatment-list" style="list-style: none; padding: 0;">
+                <li style="color: #6b7280; margin-bottom: 0.5rem;">• Re-RCT with rubber dam</li>
+                <li style="color: #6b7280; margin-bottom: 0.5rem;">• Re-RCT laser specialist</li>
+                <li style="color: #6b7280; margin-bottom: 0.5rem;">• e-RCT with retrieval of old RCT filling</li>
+              </ul>
+            </div>
+
+            <div class="treatment-price" style="font-size: 1.5rem; color: #f97316; font-weight: bold; margin: 1rem 0;">₹ 19,999</div>
+            <button class="btn" style="width: 100%; background: #f97316; color: white; padding: 1rem; border: none; border-radius: 6px; cursor: pointer; font-weight: 600;">
+              Get Free Consultation
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonials -->
+<section id="testimonials" class="testimonials" style="padding: 4rem 1rem; text-align: center;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto;">
+      <div class="section-header" style="margin-bottom: 3rem;">
+        <h2 class="section-title" style="font-size: clamp(1.5rem, 3vw, 2rem); color: #1a2c47; margin-bottom: 1rem;">What Our Patients Say</h2>
+        <p class="section-subtitle" style="color: #6b7280; max-width: 600px; margin: 0 auto;">
+          Real smiles, real stories. Here's what our patients love about their
+          CLOVE Dental experience!
+        </p>
+      </div>
+
+      <div class="testimonials-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+        <div class="testimonial-card" style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: left;">
+          <div class="testimonial-header" style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <div style="width: 48px; height: 48px; background: #e5e7eb; border-radius: 50%; margin-right: 1rem;"></div>
+            <div class="testimonial-info">
+              <h4 style="margin: 0; color: #1a2c47;">Shubham</h4>
+              <p style="margin: 0; color: #6b7280;">Indore</p>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+            <div class="stars" style="color: #f97316;">
+              <i data-lucide="star-filled" style="width: 16px; height: 16px; fill: currentColor;"></i>
+              <i data-lucide="star-filled" style="width: 16px; height: 16px; fill: currentColor;"></i>
+              <i data-lucide="star-filled" style="width: 16px; height: 16px; fill: currentColor;"></i>
+              <i data-lucide="star-filled" style="width: 16px; height: 16px; fill: currentColor;"></i>
+              <i data-lucide="star-filled" style="width: 16px; height: 16px; fill: currentColor;"></i>
+            </div>
+            <div class="treatment-badge" style="background: #f0f9ff; color: #0369a1; padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.875rem;">Aligners</div>
+          </div>
+          <p style="color: #6b7280; font-size: 0.875rem; margin: 0;">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          </p>
+        </div>
+
+        <div class="testimonial-card" style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: left;">
+          <div class="testimonial-header" style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <div style="width: 48px; height: 48px; background: #e5e7eb; border-radius: 50%; margin-right: 1rem;"></div>
+            <div class="testimonial-info">
+              <h4 style="margin: 0; color: #1a2c47;">Shubpreet</h4>
+              <p style="margin: 0; color: #6b7280;">Indore</p>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+            <div class="stars" style="color: #f97316;">
+              <i data-lucide="star-filled" style="width: 16px; height: 16px; fill: currentColor;"></i>
+              <i data-lucide="star-filled" style="width: 16px; height: 16px; fill: currentColor;"></i>
+              <i data-lucide="star-filled" style="width: 16px; height: 16px; fill: currentColor;"></i>
+              <i data-lucide="star-filled" style="width: 16px; height: 16px; fill: currentColor;"></i>
+              <i data-lucide="star-filled" style="width: 16px; height: 16px; fill: currentColor;"></i>
+            </div>
+            <div class="treatment-badge" style="background: #f0f9ff; color: #0369a1; padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.875rem;">RCT</div>
+          </div>
+          <p style="color: #6b7280; font-size: 0.875rem; margin: 0;">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          </p>
+        </div>
+
+        <div class="testimonial-card" style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: left;">
+          <div class="testimonial-header" style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <div style="width: 48px; height: 48px; background: #e5e7eb; border-radius: 50%; margin-right: 1rem;"></div>
+            <div class="testimonial-info">
+              <h4 style="margin: 0; color: #1a2c47;">Anita</h4>
+              <p style="margin: 0; color: #6b7280;">Bangalore</p>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+            <div class="stars" style="color: #f97316;">
+              <i data-lucide="star-filled" style="width: 16px; height: 16px; fill: currentColor;"></i>
+              <i data-lucide="star-filled" style="width: 16px; height: 16px; fill: currentColor;"></i>
+              <i data-lucide="star-filled" style="width: 16px; height: 16px; fill: currentColor;"></i>
+              <i data-lucide="star-filled" style="width: 16px; height: 16px; fill: currentColor;"></i>
+              <i data-lucide="star-filled" style="width: 16px; height: 16px; fill: currentColor;"></i>
+            </div>
+            <div class="treatment-badge" style="background: #f0f9ff; color: #0369a1; padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.875rem;">Laser Treatment</div>
+          </div>
+          <p style="color: #6b7280; font-size: 0.875rem; margin: 0;">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          </p>
+        </div>
+      </div>
+
+      <div class="google-reviews" style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); max-width: 500px; margin: 0 auto;">
+        <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1rem;">
+          <i data-lucide="google" style="width: 24px; height: 24px; color: #4285f4;"></i>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <h3 style="margin: 0; color: #1a2c47; font-size: 1.25rem;">Google Reviews</h3>
+            <div style="display: flex; align-items: center; gap: 0.25rem;">
+              <div class="stars" style="color: #f97316; display: flex;">
+                <i data-lucide="star-filled" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                <i data-lucide="star-filled" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                <i data-lucide="star-filled" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                <i data-lucide="star-filled" style="width: 16px; height: 16px; fill: currentColor;"></i>
+                <i data-lucide="star-filled" style="width: 16px; height: 16px; fill: currentColor;"></i>
+              </div>
+              <span style="color: #1a2c47; font-weight: bold;">4.9</span>
+            </div>
+          </div>
+        </div>
+        <p style="color: #6b7280; margin: 0; font-size: 0.875rem;">(1.6 Lakh +) Verified Google Ratings</p>
+      </div>
+    </div>
+  </section>
+
+<!-- Why Choose Us -->
+<section id="about" class="why-choose" style="padding: clamp(2rem, 5vw, 4rem) 0;">
+  <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 clamp(1rem, 3vw, 2rem);">
+    <div class="why-choose-content" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(2rem, 5vw, 4rem); align-items: center;">
+      <div>
+        <h2 class="section-title" style="font-size: clamp(1.5rem, 4vw, 2rem); color: #1a2c47; margin-bottom: clamp(1rem, 3vw, 1.5rem)">
+          Why Choose Clove Dental
+        </h2>
+        <p style="font-size: clamp(1rem, 2vw, 1.125rem); color: #6b7280; margin-bottom: clamp(1.5rem, 4vw, 2rem)">
+          Clove Dental is India's Leading dental care brand with 600+ clinic nationwide
+        </p>
+
+        <div class="features" style="display: flex; flex-direction: column; gap: clamp(1rem, 3vw, 1.5rem);">
+          <div class="feature" style="display: flex; align-items: flex-start; gap: clamp(0.75rem, 2vw, 1rem);">
+            <div class="feature-icon" style="background: #f97316; width: clamp(28px, 5vw, 34px); height: clamp(28px, 5vw, 34px); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i data-lucide="plus" style="width: clamp(28px, 5vw, 34px); height: clamp(28px, 5vw, 34px); color: white"></i>
+            </div>
+            <div class="feature-content">
+              <h3 style="font-size: clamp(1rem, 2vw, 1.125rem); color: #1a2c47; margin-bottom: 0.5rem">DORI - A.I enabled Dental chair</h3>
+              <p style="color: #6b7280; font-size: clamp(0.875rem, 1.5vw, 1rem)">Advanced AI technology for precise treatment</p>
+            </div>
+          </div>
+
+          <div class="feature" style="display: flex; align-items: flex-start; gap: clamp(0.75rem, 2vw, 1rem);">
+            <div class="feature-icon" style="background: #f97316; width: clamp(28px, 5vw, 34px); height: clamp(28px, 5vw, 34px); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i data-lucide="plus" style="width: clamp(28px, 5vw, 34px); height: clamp(28px, 5vw, 34px); color: white"></i>
+            </div>
+            <div class="feature-content">
+              <h3 style="font-size: clamp(1rem, 2vw, 1.125rem); color: #1a2c47; margin-bottom: 0.5rem">10x Safety and 4 steps sterilization process</h3>
+              <p style="color: #6b7280; font-size: clamp(0.875rem, 1.5vw, 1rem)">Highest safety standards with comprehensive sterilization</p>
+            </div>
+          </div>
+
+          <div class="feature" style="display: flex; align-items: flex-start; gap: clamp(0.75rem, 2vw, 1rem);">
+            <div class="feature-icon" style="background: #f97316; width: clamp(28px, 5vw, 34px); height: clamp(28px, 5vw, 34px); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i data-lucide="plus" style="width: clamp(28px, 5vw, 34px); height: clamp(28px, 5vw, 34px); color: white"></i>
+            </div>
+            <div class="feature-content">
+              <h3 style="font-size: clamp(1rem, 2vw, 1.125rem); color: #1a2c47; margin-bottom: 0.5rem">Experienced and Certified Implantologist</h3>
+              <p style="color: #6b7280; font-size: clamp(0.875rem, 1.5vw, 1rem)">Expert professionals with proven track records</p>
+            </div>
+          </div>
+
+          <div class="feature" style="display: flex; align-items: flex-start; gap: clamp(0.75rem, 2vw, 1rem);">
+            <div class="feature-icon" style="background: #f97316; width: clamp(28px, 5vw, 34px); height: clamp(28px, 5vw, 34px); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i data-lucide="plus" style="width: clamp(28px, 5vw, 34px); height: clamp(28px, 5vw, 34px); color: white"></i>
+            </div>
+            <div class="feature-content">
+              <h3 style="font-size: clamp(1rem, 2vw, 1.125rem); color: #1a2c47; margin-bottom: 0.5rem">Updated with world class equipments</h3>
+              <p style="color: #6b7280; font-size: clamp(0.875rem, 1.5vw, 1rem)">Latest dental technology and equipment</p>
+            </div>
+          </div>
+
+          <div class="feature" style="display: flex; align-items: flex-start; gap: clamp(0.75rem, 2vw, 1rem);">
+            <div class="feature-icon" style="background: #f97316; width: clamp(28px, 5vw, 34px); height: clamp(28px, 5vw, 34px); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i data-lucide="plus" style="width: clamp(28px, 5vw, 34px); height: clamp(28px, 5vw, 34px); color: white"></i>
+            </div>
+            <div class="feature-content">
+              <h3 style="font-size: clamp(1rem, 2vw, 1.125rem); color: #1a2c47; margin-bottom: 0.5rem">Regular audits for safety protocols</h3>
+              <p style="color: #6b7280; font-size: clamp(0.875rem, 1.5vw, 1rem)">Continuous monitoring and quality assurance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-choose-image" style="position: relative;">
+        <div class="image-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+          <div class="placeholder-image" style="width: 100%; height: clamp(300px, 50vw, 500px); overflow: hidden;">
+            <img src="src\c99e33f9ba7382428992cb7f4df4e6f761fc752b.png" alt="Image" style="width: 100%; height: 100%; object-fit: cover;"/>
+          </div>
+          <div class="image-info" style="padding: clamp(1rem, 3vw, 1.5rem); text-align: center;">
+            <h3 style="font-size: clamp(1.25rem, 3vw, 1.5rem); color: #1a2c47; margin-bottom: 0.5rem;">Your Smile, Our Priority At Clove Dental</h3>
+            <p style="color: #6b7280; font-size: clamp(0.875rem, 1.5vw, 1rem);">Expert RCT, Zero Pain, Right Here in Delhi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Appointment Section -->
+<section id="appointment" class="appointment">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          Book an Appointment With Clove Dentist in Delhi
+        </h2>
+      </div>
+
+      <div class="appointment-form">
+        <form class="form-grid" onsubmit="handleAppointmentForm(event)">
+          <div>
+            <label class="form-label">Name</label>
+            <input type="text" class="form-input" required />
+          </div>
+          <div>
+            <label class="form-label">Phone</label>
+            <input type="tel" class="form-input" required />
+          </div>
+          
+          <div>
+            <button type="submit" class="btn" style="width: 100%; font-weight: 600">
+              Book Free Consultation
+            </button>
+          </div>
+        </form>
+        <p class="form-disclaimer">
+          I agree to CLOVE Dental's Terms and Privacy Policy and consent to
+          contact via phone, email, or SMS.
+        </p>
+      </div>
+    </div>
+</section>
+
+
+
+  <!-- FAQ Section -->
+<section id="faq" class="faq-section" style="padding: 3rem 1rem; background-color: #f9fafb;">
+    <div class="container">
+        <h2 class="section-title" style="text-align: center; font-size: 2.25rem; color: #1f2937; margin-bottom: 2.5rem; font-weight: 600;">Frequently Asked Questions</h2>
+        <div class="faq-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+            <div class="faq-column">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I choose the dentist on my own for treatment ?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, you can choose your preferred dentist for your treatment, subject to their availability. We strive to accommodate your preferences.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Will I get the same doctor each time I visit the same clinic ?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We try our best to ensure continuity of care with the same doctor. However, it may depend on the doctor's schedule and availability.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How you are able to provide less prices than other dental brands ?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our operational efficiencies, ethical practices, and large network allow us to offer competitive pricing without compromising on quality.</p>
+                    </div>
+                </div>
+                 <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How you are able to provide less prices than other dental brands ?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our operational efficiencies, ethical practices, and large network allow us to offer competitive pricing without compromising on quality.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-column">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What are your dental clinic timings?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our clinic timings are generally from 9:00 AM to 9:00 PM, Monday to Saturday. Some clinics may have extended hours or Sunday openings. Please check with your specific clinic.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How can I book an appointment?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can book an appointment through our website, by calling our central helpline, or by visiting any of our clinics directly.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How frequently should I visit a dentist?</span>
+                        <i data-lucide="plus" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We generally recommend a dental check-up every six months. However, your dentist may suggest a different frequency based on your specific oral health needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer" style="background-color: #4A2F28; color: #EAE0D5; padding: 3rem 1rem 1.5rem;">
+    <div class="container">
+        <div class="footer-content" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem; gap: 2rem;">
+            <div class="footer-logo" style="margin-bottom: 1rem;">
+                <!-- Replace with your actual logo image or text -->
+                <div class="logo">
+                  <div class="logo-text">
+                    <span style="font-size: xx-large;">CLOVE<span style="color: #ffffff">:)</span></span>
+                    <span class="logo-subtitle" style="display: block ; margin-top: -5px ;color: #ffffff">DENTAL</span>
+                  </div>
+                </div>
+            </div>
+            <div class="footer-links" style="display: flex; gap: 1.5rem;">
+                <a href="#" style="color: #EAE0D5; text-decoration: none; font-size: 0.9rem;">Privacy Policy</a>
+                <a href="#" style="color: #EAE0D5; text-decoration: none; font-size: 0.9rem;">Terms of service</a>
+                <a href="#" style="color: #EAE0D5; text-decoration: none; font-size: 0.9rem;">Accessibility</a>
+            </div>
+        </div>
+        <div class="footer-bottom" style="text-align: center; border-top: 1px solid #6B4F45; padding-top: 1.5rem;">
+            <p style="font-size: 0.85rem; color: #B0A092;">All Rights Reserved - 2024, Clove Dental (a brand name of M/s. SStar Dental Centre Private Limited). Managed By Unbund</p>
+        </div>
+    </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

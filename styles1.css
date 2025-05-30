@@ -1,0 +1,1754 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #374151;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header Styles */
+.header {
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f97316;
+}
+
+.logo-subtitle {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-left: 0.25rem;
+}
+
+.nav {
+  display: none;
+  gap: 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #374151;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #f97316;
+}
+
+.header-actions {
+  display: none;
+  align-items: center;
+  gap: 1rem;
+}
+
+.phone-info {
+  display: flex;
+  align-items: center;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.phone-button {
+  background: white;
+  color: #462512;
+  padding: 8px 16px;
+  border: 1px solid #462512;
+  border-radius: 3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.phone-button:hover {
+  background: #462512;
+  color: white;
+}
+
+.btn {
+  background: #f97316;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+}
+
+.btn:hover {
+  background: #ea580c;
+}
+
+.mobile-menu-btn {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  padding: 1rem 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.mobile-menu.show {
+  display: block;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  color: #374151;
+  transition: color 0.3s;
+  padding: 0.5rem 0;
+}
+
+.mobile-nav a:hover {
+  color: #f97316;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background-color: #f0f4f7;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.hero-background-image {
+  background-image: linear-gradient(135deg, rgba(240, 244, 247, 0.8), rgba(255, 255, 255, 0.9));
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+
+.hero-text-content {
+  flex: 1 1 300px;
+  max-width: 600px;
+  background: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95));
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.hero-text-content h1 {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: bold;
+  color: #303030;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero-text-content p {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  color: #4E4E4E;
+  margin-bottom: 2rem;
+}
+
+.hero-dentist-image {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.hero-dentist-image img {
+  width: 100%;
+  height: auto;
+  max-height: 550px;
+  object-fit: contain;
+}
+
+.hero-form {
+  flex: 1 1 300px;
+  max-width: 380px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  backdrop-filter: blur(5px);
+  margin: 0 auto;
+}
+
+.hero-form h2 {
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  color: #1a2c47;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.hero-form p {
+  color: #5a677b;
+  margin-bottom: 1.8rem;
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.85rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #f97316;
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
+}
+
+.form-disclaimer {
+  font-size: clamp(0.7rem, 1.5vw, 0.8rem);
+  color: #6b7280;
+  line-height: 1.3;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+/* Services Section */
+.services {
+  padding: 4rem 0;
+  background: #f9fafb;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: clamp(1.5rem, 4vw, 1.875rem);
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  color: #6b7280;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.service-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.service-icon {
+  margin-bottom: 0.75rem;
+}
+
+.service-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.service-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Treatment Types */
+.treatments {
+  padding: 4rem 0;
+  background: white;
+}
+
+.treatments-grid {
+  display: grid;
+  gap: 2rem;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.treatment-card {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.treatment-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.treatment-title {
+  font-size: clamp(1.1rem, 2.5vw, 1.25rem);
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.treatment-subtitle {
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.treatment-types {
+  margin-bottom: 1.5rem;
+}
+
+.treatment-types h4 {
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 0.75rem;
+  font-size: clamp(0.95rem, 2vw, 1rem);
+}
+
+.treatment-list {
+  list-style: none;
+}
+
+.treatment-list li {
+  font-size: clamp(0.8rem, 1.8vw, 0.875rem);
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.treatment-price {
+  font-size: clamp(1.3rem, 3vw, 1.5rem);
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1.5rem;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 4rem 0;
+  background: white;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.testimonial-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.testimonial-info h4 {
+  font-weight: 600;
+  color: #111827;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.testimonial-info p {
+  font-size: clamp(0.8rem, 1.8vw, 0.875rem);
+  color: #6b7280;
+}
+
+.stars {
+  display: flex;
+  margin-bottom: 0.75rem;
+}
+
+.star {
+  color: #fbbf24;
+  fill: currentColor;
+}
+
+.treatment-badge {
+  display: inline-block;
+  background: #fed7aa;
+  color: #ea580c;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+  margin-bottom: 0.75rem;
+}
+
+.google-reviews {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.google-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.google-icon {
+  background: white;
+  padding: 0.75rem;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4285f4;
+}
+
+.google-info h3 {
+  font-size: clamp(1.1rem, 2.5vw, 1.25rem);
+  font-weight: 600;
+  color: #111827;
+}
+
+.google-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.google-rating span {
+  font-size: clamp(1rem, 2.2vw, 1.125rem);
+  font-weight: 600;
+}
+
+/* Why Choose Us */
+.why-choose {
+  padding: 4rem 0;
+  background: #f9fafb;
+}
+
+.why-choose-content {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+}
+
+.features {
+  margin-top: 2rem;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.feature-icon {
+  background: #f97316;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.feature-content h3 {
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.25rem;
+  font-size: clamp(0.95rem, 2vw, 1rem);
+}
+
+.feature-content p {
+  font-size: clamp(0.8rem, 1.8vw, 0.875rem);
+  color: #6b7280;
+}
+
+.why-choose-image {
+  position: relative;
+}
+
+.image-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.placeholder-image {
+  width: 100%;
+  height: 16rem;
+  background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.image-info {
+  text-align: center;
+}
+
+.image-info h3 {
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+  font-size: clamp(1rem, 2.2vw, 1.1rem);
+}
+
+.image-info p {
+  font-size: clamp(0.8rem, 1.8vw, 0.875rem);
+  color: #6b7280;
+}
+
+.floating-stat {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.floating-stat-number {
+  font-size: clamp(1.3rem, 3vw, 1.5rem);
+  font-weight: 700;
+  color: #f97316;
+}
+
+.floating-stat-label {
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+  color: #6b7280;
+}
+
+/* Appointment Section */
+.appointment {
+  padding: 4rem 0;
+  background: white;
+}
+
+.appointment-form {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.form-grid {
+  display: grid;
+  gap: 1rem;
+  align-items: end;
+}
+
+.form-label {
+  display: block;
+  font-size: clamp(0.8rem, 1.8vw, 0.875rem);
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.footer {
+  background: #111827;
+  color: white;
+  padding: 3rem 0;
+}
+
+.footer-content {
+  display: grid;
+  gap: 2rem;
+}
+
+.footer-brand {
+  margin-bottom: 1rem;
+}
+
+.footer-brand p {
+  color: #9ca3af;
+  margin: 1rem 0;
+  font-size: clamp(0.8rem, 1.8vw, 0.875rem);
+}
+
+.footer-contact {
+  margin-top: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  color: #9ca3af;
+  margin-bottom: 0.5rem;
+}
+
+.contact-item i {
+  margin-right: 0.5rem;
+}
+
+.footer-section h3 {
+  font-size: clamp(1rem, 2.2vw, 1.125rem);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: clamp(0.8rem, 1.8vw, 0.875rem);
+}
+
+.footer-links a:hover {
+  color: #f97316;
+}
+
+.footer-bottom {
+  border-top: 1px solid #374151;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+  color: #9ca3af;
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .hero .container > div {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .hero-text-content,
+  .hero-dentist-image,
+  .hero-form {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .treatments-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .google-header {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
+
+  .header-actions {
+    display: flex;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .hero .container > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .treatments-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-choose-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr 1fr 1fr auto;
+  }
+
+  .footer-content {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero .container > div {
+    flex-wrap: nowrap;
+  }
+  
+  .hero-text-content {
+    flex: 0 0 auto;
+    width: 35%;
+  }
+  
+  .hero-dentist-image {
+    flex: 0 0 auto;
+    width: 35%;
+  }
+  
+  .hero-form {
+    flex: 0 0 auto;
+    width: 30%;
+  }
+}
+
+/* Hero Section Responsive Adjustments */
+@media (max-width: 767px) { /* Adjust breakpoint as needed */
+    .hero .container {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: stretch; /* Stretch items to fill width */
+    }
+
+    .hero-text-content {
+        order: 1; /* Text content first */
+        margin-bottom: 2rem; /* Add some space below text */
+        padding-right: 0; /* Remove right padding if any */
+        text-align: center; /* Center text on mobile */
+    }
+
+    .hero-form {
+        order: 2; /* Form second */
+        margin-bottom: 2rem; /* Add some space below form */
+        width: 100%; /* Make form full width */
+    }
+
+    .hero-dentist-image {
+        order: 3; /* Dentist image last (effectively the rightmost in a stacked layout) */
+        margin-left: 0; /* Reset any desktop margins */
+        margin-right: 0;
+        max-height: 350px; /* Adjust image height for mobile */
+    }
+    
+    .hero-dentist-image img {
+        transform: scale(1); /* Reset any desktop scaling */
+    }
+
+    /* Adjust padding for the main hero section on mobile if needed */
+    .hero {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .hero .container {
+        padding: 1rem; /* Adjust container padding on mobile */
+    }
+
+    .hero-text-content h1 {
+        font-size: 2rem; /* Adjust heading size for mobile */
+    }
+
+    .hero-text-content p {
+        font-size: 1rem; /* Adjust paragraph size for mobile */
+    }
+
+    .hero-form {
+        padding: 1.5rem; /* Adjust form padding for mobile */
+    }
+}
+
+/* Styles for larger screens (desktop) - ensure these are defined outside the mobile media query */
+/* You might already have these or similar styles */
+@media (min-width: 768px) {
+    .hero .container {
+        flex-direction: row; /* Back to row layout for desktop */
+        align-items: center; /* Or your preferred alignment */
+    }
+
+    .hero-text-content {
+        order: 0; /* Default order */
+        flex: 1;
+        padding-right: 2rem;
+        text-align: left;
+    }
+
+    .hero-dentist-image {
+        order: 0; /* Default order */
+        flex: 1;
+        /* Your existing desktop styles for dentist image */
+        margin-left: -5%; 
+        margin-right: 2rem;
+    }
+    
+    .hero-dentist-image img {
+        transform: scale(1.1); 
+    }
+
+    .hero-form {
+        order: 0; /* Default order */
+        flex: 0 0 380px;
+        /* Your existing desktop styles for form */
+    }
+}
+
+/* FAQ Section Styles */
+.faq-section {
+    padding: 3rem 1rem;
+    background-color: #ffffff; /* White background for FAQ section */
+}
+
+.faq-section .section-title {
+    text-align: center;
+    font-size: 2rem; /* Adjusted from UI for better hierarchy */
+    color: #1f2937;
+    margin-bottom: 2.5rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif; /* Assuming Poppins, adjust as needed */
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 2rem 1.5rem; /* Row and column gap */
+}
+
+.faq-item {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 1rem 0;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #374151;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif; /* Assuming Roboto, adjust as needed */
+}
+
+.faq-question:hover {
+    color: #dd6b20; /* Orange hover color from stats section */
+}
+
+.faq-icon {
+    width: 18px;
+    height: 18px;
+    color: #dd6b20; /* Orange icon */
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    padding: 0 0.5rem;
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif; /* Assuming Roboto, adjust as needed */
+}
+
+.faq-item.active .faq-answer {
+    max-height: 300px; /* Adjust if answers are very long */
+    padding: 0.5rem 0.5rem 1rem;
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: #4A2F28; /* Dark brown from image */
+    color: #EAE0D5; /* Light beige text color from image */
+    padding: 3rem 1rem 1.5rem;
+    font-family: 'Roboto', sans-serif; /* Assuming Roboto, adjust as needed */
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Align logo and links to the top */
+    margin-bottom: 2rem;
+    gap: 1.5rem; /* Gap between logo and links if they wrap */
+}
+
+.footer-logo img {
+    height: 35px; /* Adjust as per your logo's aspect ratio */
+    max-width: 150px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap; /* Allow links to wrap on smaller screens */
+    gap: 1rem 1.5rem; /* Row and column gap for links */
+    align-items: center;
+}
+
+.footer-links a {
+    color: #EAE0D5;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #61433A; /* Slightly lighter brown for separator */
+    padding-top: 1.5rem;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    color: #B0A092; /* Lighter text for copyright */
+    margin: 0;
+}
+
+/* Responsive adjustments for FAQ and Footer */
+@media (max-width: 767px) {
+    .faq-grid {
+        grid-template-columns: 1fr; /* Single column for FAQ items on mobile */
+        gap: 1rem; 
+    }
+    .faq-section .section-title {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+    .faq-question {
+        font-size: 0.95rem;
+    }
+    .footer-content {
+        flex-direction: column; /* Stack logo and links vertically */
+        align-items: center; /* Center items */
+        text-align: center;
+    }
+    .footer-logo {
+        margin-bottom: 1.5rem;
+    }
+    .footer-links {
+        justify-content: center; /* Center links */
+    }
+}
+
+
+/* Stats Section Styles */
+.stats-section {
+    background-color: #fffaf0; /* A light creamy background as seen in the image */
+    padding: 2.5rem 1rem; /* Vertical and horizontal padding */
+    border-top: 1px solid #feeddc; /* Light border top */
+    border-bottom: 1px solid #feeddc; /* Light border bottom */
+}
+
+.stats-section .container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-around; /* Distribute items evenly with space around */
+    align-items: flex-start; /* Align items to the start of the cross axis */
+    gap: 1.5rem; /* Gap between items */
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-basis: 150px; /* Base width for each item, allows them to grow */
+    flex-grow: 1; /* Allow items to grow and fill space */
+    max-width: 200px; /* Max width to prevent them from becoming too wide */
+}
+
+.stat-item i[data-lucide] {
+    width: 40px;
+    height: 40px;
+    color: #dd6b20; /* Orange color for icons */
+    margin-bottom: 0.75rem;
+}
+
+.stat-number {
+    font-size: 1.85rem; /* Slightly larger font for numbers */
+    font-weight: 700; /* Bold */
+    color: #c05621; /* Darker orange for numbers */
+    line-height: 1.2;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #718096; /* Grayish color for labels */
+    margin-top: 0.25rem;
+}
+
+/* Responsive adjustments for Stats Section */
+@media (max-width: 767px) {
+    .stats-section .container {
+        gap: 2rem; /* Increase gap slightly for better spacing on mobile */
+        justify-content: center; /* Center items on mobile */
+    }
+    .stat-item {
+        flex-basis: calc(50% - 1rem); /* Two items per row on mobile, accounting for gap */
+        max-width: calc(50% - 1rem);
+    }
+    .stat-number {
+        font-size: 1.5rem;
+    }
+    .stat-label {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .stat-item {
+        flex-basis: 100%; /* One item per row on very small screens */
+        max-width: 100%;
+    }
+}
+
+.treatment-badge {
+  display: inline-block;
+  background: #fed7aa;
+  color: #ea580c;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+  margin-bottom: 0.75rem;
+}
+
+.google-reviews {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.google-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.google-icon {
+  background: white;
+  padding: 0.75rem;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4285f4;
+}
+
+.google-info h3 {
+  font-size: clamp(1.1rem, 2.5vw, 1.25rem);
+  font-weight: 600;
+  color: #111827;
+}
+
+.google-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.google-rating span {
+  font-size: clamp(1rem, 2.2vw, 1.125rem);
+  font-weight: 600;
+}
+
+/* Why Choose Us */
+.why-choose {
+  padding: 4rem 0;
+  background: #f9fafb;
+}
+
+.why-choose-content {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+}
+
+.features {
+  margin-top: 2rem;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.feature-icon {
+  background: #f97316;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.feature-content h3 {
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.25rem;
+  font-size: clamp(0.95rem, 2vw, 1rem);
+}
+
+.feature-content p {
+  font-size: clamp(0.8rem, 1.8vw, 0.875rem);
+  color: #6b7280;
+}
+
+.why-choose-image {
+  position: relative;
+}
+
+.image-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.placeholder-image {
+  width: 100%;
+  height: 16rem;
+  background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.image-info {
+  text-align: center;
+}
+
+.image-info h3 {
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+  font-size: clamp(1rem, 2.2vw, 1.1rem);
+}
+
+.image-info p {
+  font-size: clamp(0.8rem, 1.8vw, 0.875rem);
+  color: #6b7280;
+}
+
+.floating-stat {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.floating-stat-number {
+  font-size: clamp(1.3rem, 3vw, 1.5rem);
+  font-weight: 700;
+  color: #f97316;
+}
+
+.floating-stat-label {
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+  color: #6b7280;
+}
+
+/* Appointment Section */
+.appointment {
+  padding: 4rem 0;
+  background: white;
+}
+
+.appointment-form {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.form-grid {
+  display: grid;
+  gap: 1rem;
+  align-items: end;
+}
+
+.form-label {
+  display: block;
+  font-size: clamp(0.8rem, 1.8vw, 0.875rem);
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.footer {
+  background: #111827;
+  color: white;
+  padding: 3rem 0;
+}
+
+.footer-content {
+  display: grid;
+  gap: 2rem;
+}
+
+.footer-brand {
+  margin-bottom: 1rem;
+}
+
+.footer-brand p {
+  color: #9ca3af;
+  margin: 1rem 0;
+  font-size: clamp(0.8rem, 1.8vw, 0.875rem);
+}
+
+.footer-contact {
+  margin-top: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  color: #9ca3af;
+  margin-bottom: 0.5rem;
+}
+
+.contact-item i {
+  margin-right: 0.5rem;
+}
+
+.footer-section h3 {
+  font-size: clamp(1rem, 2.2vw, 1.125rem);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: clamp(0.8rem, 1.8vw, 0.875rem);
+}
+
+.footer-links a:hover {
+  color: #f97316;
+}
+
+.footer-bottom {
+  border-top: 1px solid #374151;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+  color: #9ca3af;
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .hero .container > div {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .hero-text-content,
+  .hero-dentist-image,
+  .hero-form {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .treatments-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .google-header {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
+
+  .header-actions {
+    display: flex;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .hero .container > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .treatments-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-choose-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr 1fr 1fr auto;
+  }
+
+  .footer-content {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero .container > div {
+    flex-wrap: nowrap;
+  }
+  
+  .hero-text-content {
+    flex: 0 0 auto;
+    width: 35%;
+  }
+  
+  .hero-dentist-image {
+    flex: 0 0 auto;
+    width: 35%;
+  }
+  
+  .hero-form {
+    flex: 0 0 auto;
+    width: 30%;
+  }
+}
+
+/* Hero Section Responsive Adjustments */
+@media (max-width: 767px) { /* Adjust breakpoint as needed */
+    .hero .container {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: stretch; /* Stretch items to fill width */
+    }
+
+    .hero-text-content {
+        order: 1; /* Text content first */
+        margin-bottom: 2rem; /* Add some space below text */
+        padding-right: 0; /* Remove right padding if any */
+        text-align: center; /* Center text on mobile */
+    }
+
+    .hero-form {
+        order: 2; /* Form second */
+        margin-bottom: 2rem; /* Add some space below form */
+        width: 100%; /* Make form full width */
+    }
+
+    .hero-dentist-image {
+        order: 3; /* Dentist image last (effectively the rightmost in a stacked layout) */
+        margin-left: 0; /* Reset any desktop margins */
+        margin-right: 0;
+        max-height: 350px; /* Adjust image height for mobile */
+    }
+    
+    .hero-dentist-image img {
+        transform: scale(1); /* Reset any desktop scaling */
+    }
+
+    /* Adjust padding for the main hero section on mobile if needed */
+    .hero {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .hero .container {
+        padding: 1rem; /* Adjust container padding on mobile */
+    }
+
+    .hero-text-content h1 {
+        font-size: 2rem; /* Adjust heading size for mobile */
+    }
+
+    .hero-text-content p {
+        font-size: 1rem; /* Adjust paragraph size for mobile */
+    }
+
+    .hero-form {
+        padding: 1.5rem; /* Adjust form padding for mobile */
+    }
+}
+
+/* Styles for larger screens (desktop) - ensure these are defined outside the mobile media query */
+/* You might already have these or similar styles */
+@media (min-width: 768px) {
+    .hero .container {
+        flex-direction: row; /* Back to row layout for desktop */
+        align-items: center; /* Or your preferred alignment */
+    }
+
+    .hero-text-content {
+        order: 0; /* Default order */
+        flex: 1;
+        padding-right: 2rem;
+        text-align: left;
+    }
+
+    .hero-dentist-image {
+        order: 0; /* Default order */
+        flex: 1;
+        /* Your existing desktop styles for dentist image */
+        margin-left: -5%; 
+        margin-right: 2rem;
+    }
+    
+    .hero-dentist-image img {
+        transform: scale(1.1); 
+    }
+
+    .hero-form {
+        order: 0; /* Default order */
+        flex: 0 0 380px;
+        /* Your existing desktop styles for form */
+    }
+}
+
+/* FAQ Section Styles */
+.faq-section {
+    padding: 3rem 1rem;
+    background-color: #ffffff; /* White background for FAQ section */
+}
+
+.faq-section .section-title {
+    text-align: center;
+    font-size: 2rem; /* Adjusted from UI for better hierarchy */
+    color: #1f2937;
+    margin-bottom: 2.5rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif; /* Assuming Poppins, adjust as needed */
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 2rem 1.5rem; /* Row and column gap */
+}
+
+.faq-item {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 1rem 0;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #374151;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif; /* Assuming Roboto, adjust as needed */
+}
+
+.faq-question:hover {
+    color: #dd6b20; /* Orange hover color from stats section */
+}
+
+.faq-icon {
+    width: 18px;
+    height: 18px;
+    color: #dd6b20; /* Orange icon */
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    padding: 0 0.5rem;
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif; /* Assuming Roboto, adjust as needed */
+}
+
+.faq-item.active .faq-answer {
+    max-height: 300px; /* Adjust if answers are very long */
+    padding: 0.5rem 0.5rem 1rem;
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: #4A2F28; /* Dark brown from image */
+    color: #EAE0D5; /* Light beige text color from image */
+    padding: 3rem 1rem 1.5rem;
+    font-family: 'Roboto', sans-serif; /* Assuming Roboto, adjust as needed */
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Align logo and links to the top */
+    margin-bottom: 2rem;
+    gap: 1.5rem; /* Gap between logo and links if they wrap */
+}
+
+.footer-logo img {
+    height: 35px; /* Adjust as per your logo's aspect ratio */
+    max-width: 150px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap; /* Allow links to wrap on smaller screens */
+    gap: 1rem 1.5rem; /* Row and column gap for links */
+    align-items: center;
+}
+
+.footer-links a {
+    color: #EAE0D5;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #61433A; /* Slightly lighter brown for separator */
+    padding-top: 1.5rem;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    color: #B0A092; /* Lighter text for copyright */
+    margin: 0;
+}
+
+/* Responsive adjustments for FAQ and Footer */
+@media (max-width: 767px) {
+    .faq-grid {
+        grid-template-columns: 1fr; /* Single column for FAQ items on mobile */
+        gap: 1rem; 
+    }
+    .faq-section .section-title {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+    .faq-question {
+        font-size: 0.95rem;
+    }
+    .footer-content {
+        flex-direction: column; /* Stack logo and links vertically */
+        align-items: center; /* Center items */
+        text-align: center;
+    }
+    .footer-logo {
+        margin-bottom: 1.5rem;
+    }
+    .footer-links {
+        justify-content: center; /* Center links */
+    }
+}
